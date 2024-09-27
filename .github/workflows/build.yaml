@@ -1,0 +1,12 @@
+name: Manual Build Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print build message
+        run: echo "Build pipeline executed"
