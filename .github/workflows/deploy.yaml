@@ -1,0 +1,12 @@
+name: Manual Deploy Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print deploy message
+        run: echo "Deploy pipeline executed"
